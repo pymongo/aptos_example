@@ -1,0 +1,18 @@
+[package]
+name = "aptos_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", branch = "devnet" }
+sha3 = "0.10.8"
+bcs = "0.1.6"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_yml = "0.0.10"
+
+tokio = { version="1", features=["macros","rt-multi-thread"] }
+ 
+[patch.crates-io]
+merlin = { git = "https://github.com/aptos-labs/merlin" }
+x25519-dalek = { git = "https://github.com/aptos-labs/x25519-dalek", branch = "zeroize_v1" }
