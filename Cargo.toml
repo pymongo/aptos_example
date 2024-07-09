@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", branch = "devnet" }
+aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", branch = "devnet" } #branch=devnet#d8ac339d
 sha3 = "0.10.8"
 bcs = "0.1.6"
 
